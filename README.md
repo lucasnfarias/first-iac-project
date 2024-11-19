@@ -17,6 +17,6 @@ Advantages:
 - run `terraform init`
 - to create AWS resources we used [AWS SSO](https://aws.amazon.com/pt/about-aws/whats-new/2022/07/aws-single-sign-on-aws-sso-now-aws-iam-identity-center/) to authenticate
   - install [aws cli and follow sso steps](https://docs.aws.amazon.com/pt_br/cli/latest/userguide/cli-configure-sso.html)
-  - to login run `aws s3 ls --profile mfa`
+  - to login run `aws s3 ls --profile mfa` (if you need to reconfigure sso run `aws configure sso`)
 - run `terraform apply` to create resources
 - run `terraform workspace select $WORKSPACE` (e.g. `terraform workspace select staging`) to change environments

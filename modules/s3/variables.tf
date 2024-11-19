@@ -1,5 +1,4 @@
-variable "org_name" {
+variable "s3_bucket_name" {
   type        = string
-  default     = "rocketseat"
   description = "Bucket name"
 }
